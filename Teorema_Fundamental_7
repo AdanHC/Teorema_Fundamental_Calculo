@@ -1,0 +1,10 @@
+clear
+clc
+syms x;
+f=(2)/(1+x^2)
+F=inline(char(f));
+a=3
+b=2
+i=int(f,x)
+disp('resultado:')
+F=int(f,x,a,b)
