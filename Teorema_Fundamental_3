@@ -1,0 +1,10 @@
+clear
+clc
+syms x;
+f=sqrt(2)+ sqrt(x)
+F=inline(char(f));
+a=8
+b=0
+i=int(f,x)
+disp('resultado:')
+F=int(f,x,a,b)
