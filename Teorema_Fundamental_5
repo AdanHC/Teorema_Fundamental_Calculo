@@ -1,0 +1,10 @@
+clear
+clc
+syms x;
+f=(x)/sqrt(25+3)
+F=inline(char(f));
+a=0
+b=3
+i=int(f,x)
+disp('resultado:')
+F=int(f,x,a,b)
