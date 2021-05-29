@@ -1,0 +1,11 @@
+clear, clc
+syms x;
+A=3
+f=(sqrt(A)-sqrt(x))
+F=inline(char(f));
+a=1
+b=0
+i=int(f,x)
+disp('resultado:')
+F=int(f,x,b)
+pkg load symbolic
